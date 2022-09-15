@@ -20,7 +20,7 @@ add this part to the config.js
       	position: "middle_center",
       }
 ```
-      there are no configurabe options
+there are no configurabe options
 
 a sample bash script is provided to encapulate all the work needed to use curl to send a json body
 using the 2 parameters
