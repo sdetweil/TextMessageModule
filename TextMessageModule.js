@@ -121,7 +121,9 @@ Module.register("TextMessageModule", {
 		if(this.message !== undefined){
 			// using text from module config block in config.js
 			wrapper.innerText = this.message.content;
-			if(this.message.style!=='')
+			if(this.message.class !== undefined && this.message.class!=='')
+				wrapper.classList.add(this.message.class) 
+			if(this.message.style !== undefined && this.message.style!=='')
 				wrapper.style=this.message.style
 		}
 		else{

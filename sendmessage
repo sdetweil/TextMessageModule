@@ -7,7 +7,8 @@ curl "http://localhost:8080/modules/TextMessageModule" \
 --data @<(cat <<EOF
 {
   "content": "$1",
-  "style": "$2"
+  "style": "$2",
+  "class": "$3"
   }
 EOF
 )
